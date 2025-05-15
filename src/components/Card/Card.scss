@@ -1,0 +1,31 @@
+.card {
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  column-gap: fluid-to-laptop(16, 10);
+
+  &__id {
+    @include fluid-text(20, 12);
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-weight: 700;
+    color: var(--color-red);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(44, 20);
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include fluid-text(16, 12);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  --color-white: #fff;
+  --color-gray: #555;
+  --color-gray-dark: #333;
+  --color-red: #DC0306;
+  --color-light-blue: #EEF7FF;
+
+  --container-width: #{fluid-to-laptop(
+  $container-desktop-width,
+  $container-laptop-width
+  )};
+
+  --container-padding-x: 16px;
+
+  --font-family: 'Gilroy', sans-serif;
+
+  --transition-duration: 0.2s;
+}

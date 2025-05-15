@@ -1,0 +1,43 @@
+.main {
+
+  &__slider {
+    padding-top: 2px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    column-gap: fluid-to-laptop(107, 50);
+    margin-top: 80px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+  }
+
+  &__section {
+
+    &-description {
+      font-weight: 400;
+      margin-top: fluid-to-laptop(42, 20);
+    }
+
+    &-title {
+      color: var(--color-gray-dark);
+    }
+
+    &-advantages {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: fluid(59, 25) fluid(84, 40);
+      margin-top: fluid(124, 40);
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+

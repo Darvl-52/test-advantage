@@ -1,0 +1,52 @@
+.slider {
+  position: relative;
+  width: fluid(600, 300);
+  height: fluid(600, 300);
+  padding-top: 20px;
+
+  &__group {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 47px;
+    inset-inline: 42px;
+    z-index: 100;
+
+    @include mobile {
+      column-gap: 20px;
+    }
+
+    &-subscribe {
+      @include flex-center(true);
+
+      max-width: fluid(275, 150);
+      width: 100%;
+      background-color: var(--color-red);
+      color: var(--color-white);
+      font-size: fluid(18, 10);
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: fluid(20, 10) fluid(40, 20);
+
+      @include hover {
+        background-color: var(--color-white);
+        color: var(--color-red);
+      }
+    }
+
+    &-navigation {
+      display: flex;
+      align-items: center;
+      column-gap: fluid(24, 12);
+    }
+
+    &-prev {
+      rotate: -90deg;
+    }
+
+    &-next {
+      rotate: 90deg;
+    }
+  }
+}
